@@ -13,15 +13,16 @@ namespace API_StraviaTEC.Controllers
     {
         NpgsqlConnection conexion = new NpgsqlConnection();
         string cadenaConexion = "Server = 127.0.0.1; Port = 5432; Database = TallerA; User Id = postgres; Password = 123456";
-        string prueba;
+        
         // GET api/values
-        public string Get()
+        public List<string> Get()
         {
             conexion.ConnectionString = cadenaConexion;
             bool flag = false;
             var sql = "SELECT * FROM project";
             NpgsqlCommand cmd = new NpgsqlCommand(sql, conexion);
-            
+            string aux;
+            List<string> prueba = new List<string>();
             try
             {
                 conexion.Open();
@@ -37,7 +38,7 @@ namespace API_StraviaTEC.Controllers
                 while (dr.Read())
                 {
                     Console.Write("{0}\t{1} \n", dr[0], dr[1]);
-                    prueba = dr[0].ToString();
+                    prueba.Add(dr[0].ToString());
                     flag = true;
                 }
                 Debug.WriteLine("Conexion realizada con exito");
