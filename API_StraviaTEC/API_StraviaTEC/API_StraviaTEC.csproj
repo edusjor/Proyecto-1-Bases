@@ -186,11 +186,31 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\ActividadController.cs" />
+    <Compile Include="Controllers\Amigos_AtletasController.cs" />
+    <Compile Include="Controllers\AppMovilController.cs" />
+    <Compile Include="Controllers\CarreraController.cs" />
+    <Compile Include="Controllers\ClienteController.cs" />
+    <Compile Include="Controllers\DeportistaController.cs" />
+    <Compile Include="Controllers\GrupoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\InscripcionController.cs" />
+    <Compile Include="Controllers\OrganizadorController.cs" />
+    <Compile Include="Controllers\RetoController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Actividad.cs" />
+    <Compile Include="Models\Amigos_Atletas.cs" />
+    <Compile Include="Models\AppMovil.cs" />
+    <Compile Include="Models\Carrera.cs" />
+    <Compile Include="Models\Cliente.cs" />
+    <Compile Include="Models\Deportista.cs" />
+    <Compile Include="Models\Grupo.cs" />
+    <Compile Include="Models\Inscripcion.cs" />
+    <Compile Include="Models\Organizador.cs" />
+    <Compile Include="Models\Reto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -247,7 +267,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
